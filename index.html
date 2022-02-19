@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bai tap JS buoi 6</title>
+	
+	<!-- BT 4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+	
+</head>
+<body>
+	<header>
+		<h1 style="text-align: center;">
+			Bài tập Javascript buổi 6
+		</h1>	
+	</header>		
+	
+    <div class="container" style="margin-bottom: 200px">
+		<div class="row justify-content-around">
+			<!-- Bài 1: Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000 -->
+			<div class="col-5 mt-5">
+				<div class="card">
+					<div class="card-header text-center" style="background-color: #007bff; color: #fff;">
+						Bài 1: Tìm số nguyên dương nhỏ nhất sao cho: 
+						<br>1 + 2 + … + n > 10000
+					</div>
+					<div class="card-body">
+						<!-- số n -->
+						<!-- <div class="form-group">
+							<label for="">Num a1</label>
+							<input type="text" id="soN" class="form-control" >                  
+						</div> -->						
+						<!-- Giá trị cho sẵn -->
+						<div class="form-group">
+							<label for="">Giá trị cho sẵn</label>
+							<select name="" class="form-control" id="luongNgay">
+								<option value="10000">10,000</option>                        
+							</select>
+						</div>                
+						<!-- Button submit -->
+						<div class="text-center">
+							<button id="soTong" class="btn btn-primary">Kết quả</button>
+						</div>						
+						<!-- Display result -->
+						<div id="soTongNV-wrapper" style="display: none; margin-top: 10px;" class="text-center">
+							<p>Sum: <span id="soTongNVEl"></span></p>							
+							<p class="alert alert-primary">Min: <span id="minEl"></span></p>                     
+						</div>
+				</div>
+				</div>				
+			</div>
+
+			<!-- Bài 2: Tìm số nguyên dương nhỏ nhất sao cho: 1 + 2 + … + n > 10000 -->
+			<div class="col-5 mt-5">
+				<div class="card">
+					<div class="card-header text-center" style="background-color: #dc3545; color: #fff;">
+						Bài 2: Viết chương trình nhập vào 2 số x, n 
+						<br> tính tổng: S(n) = x + x^2 +  x^3 + … + x^n
+					</div>					
+			        
+				</div>
+				<div class="form-group">
+			          <label for="inputVD">Nhập vào số x:</label>
+			          <input type="text" id="inputVD" class="form-control">		          
+			        </div>
+			        <div class="form-group">
+			          <label for="inputBT2">Nhập vào số n:</label>
+			          <input type="text" id="inputBT2" class="form-control">		          
+			        </div>
+			        <button id="evenBT2" class="btn btn-danger">Tính tổng</button>						        			       
+
+			        <div id="resultBT2" style="display: none;" class="alert alert-danger"></div>
+
+		    </div>
+
+		    <!-- Bài 3: Nhập vào n. Tính giai thừa 1*2*...n -->
+			<div class="col-5 mt-5">
+				<div class="card">
+					<div class="card-header text-center" style="background-color: #28a745; color: #fff;">
+						Bài 3: Nhập vào n. Tính giai thừa 1*2*...n 						
+					</div>
+					<div class="card-body">
+						<div class="form-group">
+				          <label for="inputBT3">Nhập vào số N:</label>
+				          <input type="text" id="inputBT3" class="form-control">
+
+				        </div>
+				        <!-- Button submit -->
+				        <div class="text-center">
+							<button id="evenBT3" class="btn btn-success">Tính giai thừa</button>
+						</div>        
+				        
+				        <div id="resultBT3" style="display: none;" class="alert alert-success"></div>
+					</div>		        
+				</div>		        
+		        
+		    </div>
+
+			<!-- Bài 4: viết chương trình khi click vào button sẽ in ra 10 thẻ div -->
+			<div class="col-5 mt-5">
+		        <div style="background-color: #17a2b8; color: #fff; padding: 10px 0;">
+						Bài 4: viết chương trình khi click vào button sẽ in ra 10 thẻ div 						
+				</div>
+				<button class="btn btn-secondary" id="create">Create</button>
+				<div style="background-color: #000; width: 100%; height: 30px;">					
+			        <div id="parent" style="display: none; background-color: #000; padding: 5px; color: #fff;">
+	    				<div style="background-color: blue;">Div lẻ 1</div>
+	    				<div style="background-color: red;">Div chẵn 2</div>
+	    				<div style="background-color: blue;">Div lẻ 3</div>
+	    				<div style="background-color: red;">Div chẵn 4</div>
+	    				<div style="background-color: blue;">Div lẻ 5</div>
+	    				<div style="background-color: red;">Div chẵn 6</div>
+	    				<div style="background-color: blue;">Div lẻ 7</div>
+	    				<div style="background-color: red;">Div chẵn 8</div>
+	    				<div style="background-color: blue;">Div lẻ 9</div>
+	    				<div style="background-color: red;">Div chẵn 10</div>
+	    			</div>    				
+		        </div>						
+		        		        	            			
+		    </div>
+
+						
+		</div>		
+    </div>
+    <br>
+    
+
+	<!-- MY JAVASCRIPT -->
+	<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
